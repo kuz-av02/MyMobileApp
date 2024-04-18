@@ -48,4 +48,7 @@
     <string name="write_who_is_on_image">Write who is on image</string>
     <string name="holy_molly_that_is_right">Holy Molly! That is Right</string>
     <string name="try_again">Try again</string>
+    <string name="your_photo_is_gorgeous">Your photo is gorgeous!</string>
+    <string name="just_resize_that_photo_for_fit_in_square">Just resize that photo\nfor fit in square</string>
+    <string name="use_that_image">Use that image</string>
 </resources>
