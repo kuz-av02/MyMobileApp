@@ -28,13 +28,13 @@ class Game_two : AppCompatActivity() {
             next.visibility=View.VISIBLE
             second_btn.backgroundTintList = getColorStateList(R.color.green)
             if (first_btn.backgroundTintList == getColorStateList(R.color.bluee)) {
-                first_btn.backgroundTintList == getColorStateList(R.color.language_background_true)
+                first_btn.backgroundTintList = getColorStateList(R.color.language_background_true)
             }
             if (third_btn.backgroundTintList == getColorStateList(R.color.bluee)) {
-                third_btn.backgroundTintList == getColorStateList(R.color.language_background_true)
+                third_btn.backgroundTintList = getColorStateList(R.color.language_background_true)
             }
             if (fourth_btn.backgroundTintList == getColorStateList(R.color.bluee)) {
-                fourth_btn.backgroundTintList == getColorStateList(R.color.language_background_true)
+                fourth_btn.backgroundTintList = getColorStateList(R.color.language_background_true)
             }
         }
         next.setOnClickListener {
