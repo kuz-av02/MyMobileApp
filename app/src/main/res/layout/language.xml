@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#410FA3">
+
+        <TextView
+            android:id="@+id/language_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/fredoka_medium"
+            android:text="Language Select"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/mother_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="What is your mother language?"
+            android:fontFamily="@font/fredoka_medium"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/russianbtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:paddingTop="22dp"
+            android:text="Russian"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:gravity=""
+            android:paddingStart="16dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/fredoka_medium"
+            android:backgroundTint="@color/language_background"
+            android:background="@drawable/rounded_active">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/englishbtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:text="English"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:paddingTop="22dp"
+            android:gravity=""
+            android:paddingStart="16dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/fredoka_medium"
+            android:backgroundTint="@color/language_background"
+            android:background="@drawable/rounded_active">/>
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/choosebtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_active"
+        android:backgroundTint="#5B7BFE"
+        android:text="Choose"
+        android:textAllCaps="false"
+        android:fontFamily="@font/fredoka_medium"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

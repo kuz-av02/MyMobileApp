@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="#410FA3"
+        android:paddingStart="24dp"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/random_avatar"
+            android:scaleType="centerCrop"
+            android:contentDescription="" />
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Greetings"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/fredoka_medium"
+            android:textSize="22sp"
+            android:textFontWeight="500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you ready for learning today?"
+            android:textColor="#B6B6B6"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Performers"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:fontFamily="@font/fredoka_medium" />
+
+        <LinearLayout
+            android:id="@+id/first_top"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:backgroundTint="#E5E5E5"
+            android:background="@drawable/rounded_active">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/random_image_person_1"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/first_top_email"
+                android:text="John Doe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:paddingStart="24dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/first_top_points"
+                android:text="10 points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:paddingStart="24dp"
+                android:fontFamily="@font/fredoka_medium"
+                android:layout_gravity="center|end"
+                android:gravity="end"
+                android:layout_marginEnd="14sp" />
+        </LinearLayout>
+
+        <!-- Второй лучший пользователь -->
+        <LinearLayout
+            android:id="@+id/second_top"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:backgroundTint="#E5E5E5"
+            android:background="@drawable/rounded_active">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/random_image_person_2"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/second_top_email"
+                android:text="Dmitri Ivanovich\nMendeleev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:paddingStart="24dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/second_top_points"
+                android:text="12 points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:paddingStart="24dp"
+                android:fontFamily="@font/fredoka_medium"
+                android:layout_gravity="center|end"
+                android:gravity="end"
+                android:layout_marginEnd="14sp" />
+        </LinearLayout>
+
+        <!-- Третий лучший пользователь -->
+        <LinearLayout
+            android:id="@+id/third_top"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:backgroundTint="#E5E5E5"
+            android:background="@drawable/rounded_active">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/random_image_person_3"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/third_top_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/fredoka_regular"
+                android:paddingStart="24dp"
+                android:text="Vlad Tepes "
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/third_top_points"
+                android:text="8 points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:paddingStart="24dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/fredoka_medium"
+                android:layout_gravity="center|end"
+                android:gravity="end"
+                android:layout_marginEnd="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/fredoka_medium"
+            android:textColor="@color/text_color"
+            android:text="Available Exercises" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <!-- Первая игра -->
+            <LinearLayout
+                android:id="@+id/first_game"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:background="@drawable/rounded_active"
+                android:backgroundTint="#5B7BFE"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:visibility="gone"
+                    android:background="@drawable/rounded_active"
+                    android:backgroundTint="#5B7BFE"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/random_image_person_4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guess the Animal"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <!-- Вторая игра -->
+            <LinearLayout
+                android:id="@+id/second_game"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/rounded_active"
+                android:backgroundTint="#D6185D"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/random_image_person_5" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Word Practice"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <!-- Третья игра -->
+            <LinearLayout
+                android:id="@+id/third_game"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:background="@drawable/rounded_active"
+                android:backgroundTint="#F76400"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/random_image_person_6" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audition"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <!-- Четвертая игра -->
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/rounded_active"
+                android:backgroundTint="#5BA890"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/random_image_person_7" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Game"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

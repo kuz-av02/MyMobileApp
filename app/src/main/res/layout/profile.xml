@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+    
+        <!-- Верхняя часть с профилем пользователя -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#410FA3"
+            android:orientation="vertical"
+            android:paddingVertical="12dp"
+            android:paddingStart="20dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/profile_avatar"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:src="@drawable/profile_placeholder"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/profiletv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_profile"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fredoka_medium"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <!-- Основное содержимое -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- Разделитель -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <!-- Кнопка: Сменить тему -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/switch_theme"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/rounded_active"
+                android:backgroundTint="@color/bluee"
+                android:text="@string/switch_theme"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:fontFamily="@font/fredoka_medium" />
+
+            <!-- Кнопка: Сменить язык -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/change_language"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/rounded_active"
+                android:backgroundTint="@color/bluee"
+                android:text="@string/change_mother_language"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:fontFamily="@font/fredoka_medium" />
+
+            <!-- Кнопка: Сменить изображение -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/change_image"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/rounded_active"
+                android:backgroundTint="@color/bluee"
+                android:text="@string/change_your_image"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:fontFamily="@font/fredoka_medium" />
+
+            <!-- Кнопка: Выйти -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Logout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/rounded_active"
+                android:backgroundTint="@color/button_background"
+                android:text="@string/logout"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:fontFamily="@font/fredoka_medium" />
+
+        </LinearLayout>
+
+</LinearLayout>

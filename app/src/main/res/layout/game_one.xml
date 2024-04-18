@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topAppBarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/blue"
+        android:paddingStart="24dp"
+        android:paddingTop="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#410FA3"
+                android:src="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/fredoka_medium"
+                android:text="@string/guess_the_animal"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="335dp"
+            android:layout_height="335dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/racoon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <LinearLayout
+            android:id="@+id/third_after"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/microtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="24dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:text="@string/write_who_is_on_image"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/animalText"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="24dp"
+                android:background="@drawable/rounded_active"
+                android:backgroundTint="#080E1E0D"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingStart="12dp" />
+
+        </LinearLayout>
+        <!-- 2слой -->
+        <TextView
+            android:id="@+id/text_yay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/fredoka_regular"
+            android:text="🎉"
+            android:textColor="@color/text_color"
+            android:textSize="200sp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/text_yay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="24dp"
+            android:fontFamily="@font/fredoka_bold"
+            android:text="@string/holy_molly_that_is_right"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+        <!--  3слой -->
+        <TextView
+            android:id="@+id/again1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/fredoka_regular"
+            android:text="😿"
+            android:textColor="@color/text_color"
+            android:textSize="200sp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/again2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="24dp"
+            android:gravity="center"
+            android:fontFamily="@font/fredoka_bold"
+            android:text="Eh? Wrong answer :(\n That is: Racoon"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_active"
+            android:backgroundTint="@color/bluee"
+            android:fontFamily="@font/fredoka_medium"
+            android:text="@string/check"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_active"
+            android:backgroundTint="@color/bluee"
+            android:fontFamily="@font/fredoka_medium"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/again"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_active"
+            android:backgroundTint="@color/bluee"
+            android:fontFamily="@font/fredoka_medium"
+            android:text="@string/try_again"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>
